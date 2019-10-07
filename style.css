@@ -1,0 +1,31 @@
+html, body {
+    background: #fff;
+}
+
+.apple {
+    width: 280px;
+    height: 280px;
+
+    position: absolute;
+    top: calc(50% - 140px);
+    left: calc(50% - 140px);
+}
+
+.rays {
+    width: 500px;
+    height: 500px;
+
+    position: absolute;
+    top: calc(50% - 250px);
+    left: calc(50% - 250px);
+    
+    animation-name: spin;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
